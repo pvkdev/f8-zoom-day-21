@@ -74,7 +74,7 @@ h1 {
 
 /* Chiều cao chia theo tỷ lệ */
 .instruction {
-  flex: 15;
+  flex: 20;
   max-height: 150px;
   background: #fff3cd;
   overflow-y: auto;
