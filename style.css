@@ -27,6 +27,9 @@ body {
   font-size: 16px;
   line-height: 1.5;
 }
+p {
+  margin: 0;
+}
 
 h1 {
   text-align: center;
@@ -42,13 +45,13 @@ h1 {
 }
 
 .method-buttons button {
-  padding: 5px 5px;
+  padding: 5px 10px;
   border: 1px solid #ccc;
   background: #fff;
   cursor: pointer;
   border-radius: 6px;
   transition: all 0.2s ease;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .method-buttons button:hover {
@@ -61,6 +64,7 @@ h1 {
   gap: 20px;
   height: 100%;
   margin: 20px;
+  max-height: 70vh;
 }
 
 @media (max-width: 1024px) {
@@ -80,11 +84,13 @@ h1 {
 
 /* Chiều cao chia theo tỷ lệ */
 .instruction {
-  flex: 20; /* 50% */
+  flex: 20;
+  max-height: 150px;
   background: #fff3cd;
   overflow-y: auto;
-  border-radius: 12px;
-  padding: 10px 20px;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 16px;
 }
 h3 {
   flex: 1;
@@ -95,21 +101,21 @@ textarea {
   flex: 10; /* 30% */
   font-family: monospace;
   resize: none;
-  border-radius: 12px;
-  padding: 20px;
+  border-radius: 6px;
+  padding: 10px;
 }
 
 button#runTest,
 button#runTest2,
 button#runTest3 {
   flex: 1; /* 20% */
-  padding: 10px 20px;
+  padding: 10px;
   background-color: #4caf50;
   border: none;
   color: white;
   cursor: pointer;
   width: 100%;
-  border-radius: 12px;
+  border-radius: 6px;
 }
 
 button#runTest:hover,
@@ -131,8 +137,8 @@ pre#log {
   background: #222;
   color: #c6ffdd;
   overflow-y: auto;
-  border-radius: 12px;
-  padding: 20px;
+  border-radius: 6px;
+  padding: 10px;
   margin: 0;
   font-size: 20px;
 }
