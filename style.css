@@ -8,19 +8,9 @@ body {
   padding: 0;
   height: 100vh;
   font-family: sans-serif;
-  background: #c6ffdd; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #f7797d,
-    #fbd786,
-    #c6ffdd
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #f7797d,
-    #fbd786,
-    #c6ffdd
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #c6ffdd;
+  background: -webkit-linear-gradient(to right, #f7797d, #fbd786, #c6ffdd);
+  background: linear-gradient(to right, #f7797d, #fbd786, #c6ffdd);
 
   display: flex;
   flex-direction: column;
@@ -84,13 +74,13 @@ h1 {
 
 /* Chiều cao chia theo tỷ lệ */
 .instruction {
-  flex: 20;
+  flex: 15;
   max-height: 150px;
   background: #fff3cd;
   overflow-y: auto;
   border-radius: 6px;
   padding: 10px;
-  font-size: 16px;
+  font-size: 14px;
 }
 h3 {
   flex: 1;
@@ -98,11 +88,12 @@ h3 {
   align-content: end;
 }
 textarea {
-  flex: 10; /* 30% */
+  flex: 20; /* 30% */
   font-family: monospace;
   resize: none;
   border-radius: 6px;
   padding: 10px;
+  font-size: 14px;
 }
 
 button#runTest,

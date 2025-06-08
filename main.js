@@ -283,7 +283,7 @@ methodList.forEach((method) => {
     currentMethod = method;
     document.getElementById("instruction").innerHTML = `
         <p>Đang test phương thức: <strong>${method}</strong></p>
-        <p><em>${arrayMethodsInfo[method].explanation}</em></p>
+        <p>${arrayMethodsInfo[method].explanation}</p>
     `;
     document.getElementById("codeInput").value = arrayMethodsInfo[method].test1;
     document.getElementById("codeInput2").value =
